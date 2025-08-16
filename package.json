@@ -6,6 +6,8 @@
     "dev": "bun run --watch src/index.ts"
   },
   "dependencies": {
+    "@line/bot-sdk": "^10.0.0",
+    "dotenv": "^17.2.1",
     "elysia": "latest"
   },
   "devDependencies": {
