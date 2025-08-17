@@ -40,3 +40,14 @@ yarn-error.log*
 **/*.log
 package-lock.json
 **/*.bun
+
+# ngrok binary (บางคนโหลดมาไว้ในโปรเจกต์)
+ngrok
+ngrok.exe
+
+# โฟลเดอร์ config / data ของ ngrok
+.ngrok2/
+.ngrok/
+
+# log file ที่ ngrok สร้าง
+ngrok.log
