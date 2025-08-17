@@ -8,5 +8,8 @@ const app = new Elysia()
   .use(apiRoute)
   
   .get("/", () => "Hello Elysia")
-// ❌ ไม่ต้อง listen() บน Vercel
-export default app.handle; // ต้อง export default handler
+  .listen(3000);
+
+console.log(
+  `🦊 Elysia is running at ${app.server?.hostname}:${app.server?.port}`
+);
